@@ -30,7 +30,7 @@ export async function executeScheduledTask(request, env, ctx, usingDemoAccount) 
                 dealId: item.position.dealId,
                 epic: null,
                 expiry: null,
-                direction: item.position.direction === "BUY",
+                direction: "SELL",
                 size: String(item.position.size),
                 level: null,
                 orderType: "MARKET",
